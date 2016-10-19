@@ -29,20 +29,20 @@
                 });
             }
         ).fail(function(args , args2 , args3){
-            console.log('fails');
-            console.log(args);
-            console.log(args2);
-            console.log(args3);
+            // console.log('fails');
+            // console.log(args);
+            // console.log(args2);
+            // console.log(args3);
         }).done(function(args , args2 , args3){
-            console.log('done');
-            console.log(args);
-            console.log(args2);
-            console.log(args3);
+            // console.log('done');
+            // console.log(args);
+            // console.log(args2);
+            // console.log(args3);
         }).always(function(args , args2 , args3){
-            console.log('always');
-            console.log(args);
-            console.log(args2);
-            console.log(args3);
+            // console.log('always');
+            // console.log(args);
+            // console.log(args2);
+            // console.log(args3);
         });
     };
 
