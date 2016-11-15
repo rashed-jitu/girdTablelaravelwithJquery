@@ -18,6 +18,14 @@ require('bootstrap-sass');
 
 window.Vue = require('vue');
 require('vue-resource');
+window.nunjucks = require('nunjucks');
+
+
+/**
+ * HandleBar Install
+ * */
+
+window.Handlebars = require('handlebars/runtime');
 
 /**
  * We'll register a HTTP interceptor to attach the "CSRF" header to each of
@@ -43,3 +51,4 @@ Vue.http.interceptors.push((request, next) => {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+

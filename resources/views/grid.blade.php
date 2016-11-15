@@ -1,9 +1,15 @@
 @extends('main')
 @section('content')
-    <table class="table table-bordered table-hover table-responsive build-grid-js" data-target-url="/api/grid">
-        <thead>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="table-wrapper loading">
+
+    </div>
+    <div class="table-wrapper2 loading">
+
+    </div>
+    <div class="table-wrapper3 loading">
+
+    </div>
+    <div class="table-wrapper4 loading">
+
+    </div>
 @stop

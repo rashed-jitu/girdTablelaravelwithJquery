@@ -1,9 +1,77 @@
-
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.table-wrapper{
+  margin-top:40px;
+  position: relative;
+  min-height: 400px;
+  &.loading{
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      background: url(../img/gears.gif);
+      background-position: center center;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    table{
+      opacity: 0.3;
+    }
+  }
+}
+.sortable {
+  cursor: pointer;
+  position: relative;
+  &:after {
+    content: "\f0dc";
+    font-family: FontAwesome;
+    right: 10px;
+    position: absolute;
+    top: 5px;
+  }
+  &.asc{
+    &:after {
+      content: "\f0de";
+      font-family: FontAwesome;
+      right: 10px;
+      position: absolute;
+      top: 5px;
+    }
+  }
+  &.desc{
+    &:after {
+      content: "\f0dd";
+      font-family: FontAwesome;
+      right: 10px;
+      position: absolute;
+      top: 5px;
+    }
+  }
+}
+.table-inner{
+  .search{
+    text-align: right;
+    padding: 5px 0;
+    input{
+      padding: 5px;
+
+    }
+  }
+}
+.paginationWrapper {
+  text-align: center;
+}
+.pagination > li {
+  margin-bottom: 10px;
+  display: inline-block;
+}

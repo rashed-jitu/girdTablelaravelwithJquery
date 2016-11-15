@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5765,5 +5766,59 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.table-wrapper {
+  margin-top: 40px;
+  position: relative;
+  min-height: 400px; }
+  .table-wrapper.loading:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background: url(../img/gears.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+  .table-wrapper.loading table {
+    opacity: 0.3; }
+
+.sortable {
+  cursor: pointer;
+  position: relative; }
+  .sortable:after {
+    content: "\f0dc";
+    font-family: FontAwesome;
+    right: 10px;
+    position: absolute;
+    top: 5px; }
+  .sortable.asc:after {
+    content: "\f0de";
+    font-family: FontAwesome;
+    right: 10px;
+    position: absolute;
+    top: 5px; }
+  .sortable.desc:after {
+    content: "\f0dd";
+    font-family: FontAwesome;
+    right: 10px;
+    position: absolute;
+    top: 5px; }
+
+.table-inner .search {
+  text-align: right;
+  padding: 5px 0; }
+  .table-inner .search input {
+    padding: 5px; }
+
+.paginationWrapper {
+  text-align: center; }
+
+.pagination > li {
+  margin-bottom: 10px;
+  display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */
