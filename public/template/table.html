@@ -1,14 +1,14 @@
 <table class="table table-bordered table-hover table-responsive js-data-table">
     <thead>
     <tr>
-        {% for tHead in tHeads%}
-        <th {%if tHead.sortable %} class="sortable" data-sort-target="{{tHead.name}}" {%endif%}>
-            {{tHead.displayName}}
+        {% for tHead in tHeads -%}
+        <th {%if tHead.sortable %} class="sortable" data-sort-target="{{tHead.name}}" {% endif %}>
+            {{ tHead.displayName }}
         </th>
-        {%endfor%}
+        {%- endfor %}
     </tr>
     </thead>
     <tbody>
-        {% include "template/tablerows.html" %}
+    {% include "template/tablerows.html" %}
     </tbody>
 </table>

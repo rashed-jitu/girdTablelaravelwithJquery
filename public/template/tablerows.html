@@ -1,9 +1,9 @@
-{% for row in tRows%}
+{% for row in tRows -%}
 <tr>
-    {% for tHead in tHeads %}
+    {% for tHead in tHeads -%}
     <td>
         {{row[tHead.name]}}
     </td>
-    {%endfor%}
+    {%- endfor %}
 </tr>
-{%endfor%}
+{%- endfor %}
