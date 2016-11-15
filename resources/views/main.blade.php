@@ -8,6 +8,7 @@
     @yield('content')
 </div>
 <script src="/js/app.js"></script>
+<script src="/js/table.render.js"></script>
 <script src="/js/custom.js"></script>
 </body>
 </html>

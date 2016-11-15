@@ -1,0 +1,7 @@
+<div class="{{paginationClass}}">
+    <ul class="pagination">
+        {% for i in range(0, perPage) -%}
+        <li {% if(loop.first) %} class="active" {%endif%}><a href="#{{ i + 1 }}">{{ i + 1 }} </a></li>
+        {%- endfor %}
+    </ul>
+</div>
